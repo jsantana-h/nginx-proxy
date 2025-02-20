@@ -11,6 +11,7 @@ services:
       - ./certs:/etc/nginx/certs:ro
       - ./vhost:/etc/nginx/vhost.d
       - ./html:/usr/share/nginx/html
+      - ./conf/client_max_body_size.conf:/etc/nginx/conf.d/client_max_body_size.conf
     networks:
       - nginx-proxy
 
